@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — TraderVault LM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #F8F6F0; }
+    body { font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: #002334; }
+    * { box-sizing: border-box; }
+    a { text-decoration: none; }
+    @keyframes particleFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
+    .tv-desktop-links { display: flex; }
+    .tv-nav-auth { display: flex; }
+    .tv-burger { display: none !important; }
+    @media (max-width: 920px) {
+      .tv-desktop-links { display: none !important; }
+      .tv-nav-auth { display: none !important; }
+      .tv-burger { display: flex !important; }
+    }
+    @media (max-width: 980px) {
+      .tv-cards { grid-template-columns: 1fr !important; max-width: 440px !important; }
+      .tv-featured-card { margin-top: 0 !important; }
+      .tv-faq-grid { grid-template-columns: 1fr !important; }
+      .tv-footer-grid { grid-template-columns: 1fr 1fr !important; }
+      .tv-cta-pills { flex-direction: column !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div id="top" style="background: #F8F6F0; min-height: 100vh; overflow-x: clip;">
+
+  <!-- ━━━ S0 — NAVIGATION ━━━ -->
+  <nav id="tv-nav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: 64px; background: rgba(0,35,52,0.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <a href="index.html" style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+        <img src="assets/tv-darkmode.svg" alt="TraderVault LM" style="height: 34px; width: auto; display: block;">
+      </a>
+      <div class="tv-desktop-links" style="display: flex; align-items: center; gap: 32px;">
+        <a href="index.html" style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55);">Home</a>
+        <a href="about.html" style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55);">About Us</a>
+        <a href="index.html#features" style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55);">Features</a>
+        <a href="integrations.html" style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55);">Integrations</a>
+        <a href="#top" style="font-size: 13px; font-weight: 500; color: #FFFFFF; padding-bottom: 4px; border-bottom: 2px solid #CEFF00;">Pricing</a>
+        <a href="#cta" style="font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55);">Contact</a>
+      </div>
+      <div class="tv-nav-auth" style="display: flex; align-items: center; gap: 12px;">
+        <button style="height: 36px; padding: 0 18px; border-radius: 8px; border: 1.5px solid rgba(255,255,255,0.30); background: transparent; color: rgba(255,255,255,0.8); font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">Login</button>
+        <button style="height: 36px; padding: 0 18px; border-radius: 8px; border: none; background: #CEFF00; color: #002334; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;">Sign Up</button>
+      </div>
+      <button class="tv-burger" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: transparent; border: none; cursor: pointer; padding: 0;" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ━━━ S1 — HERO + PRICING CARDS ━━━ -->
+  <section style="position: relative; background: #F8F6F0; padding: 144px 0 96px; overflow: hidden;">
+    <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px);">
+      <div data-reveal style="display: flex; justify-content: center;">
+        <div style="display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 999px; border: 1px solid rgba(111,38,255,0.35);">
+          <span style="font-size: 11px; font-weight: 700; color: #6F26FF; text-transform: uppercase; letter-spacing: 0.1em;">Simple Pricing</span>
+        </div>
+      </div>
+      <h1 data-reveal data-reveal-delay="80" style="font-family: 'Unna', Georgia, serif; font-weight: 700; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; color: #002334; text-align: center; max-width: 720px; margin: 20px auto 0;">Plans built for how traders actually grow.</h1>
+      <p data-reveal data-reveal-delay="160" style="font-size: 17px; color: rgba(0,35,52,0.55); text-align: center; max-width: 520px; margin: 20px auto 0; line-height: 1.7;">Start with a 3-day free trial, then choose the plan that fits your workflow.</p>
+
+      <!-- CARDS -->
+      <div class="tv-cards" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 52px auto 0; align-items: start;">
+        <!-- LAUNCH -->
+        <div data-reveal style="background: #FFFFFF; border: 1px solid rgba(0,35,52,0.08); border-radius: 16px; padding: 32px;">
+          <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #6F26FF; text-transform: uppercase;">Tier 1</div>
+          <div style="font-size: 28px; font-weight: 700; color: #002334; margin-top: 8px;">Launch</div>
+          <div style="font-size: 14px; color: rgba(0,35,52,0.55); line-height: 1.6; margin-top: 8px;">Build your core workflow with strategy creation, indicator access, and limited account connectivity.</div>
+          <div style="margin-top: 24px;">
+            <div style="font-size: 11px; color: rgba(0,35,52,0.40); margin-bottom: 4px;">Starting at</div>
+            <div><span style="font-family: 'Unna', Georgia, serif; font-weight: 700; font-size: 56px; color: #002334; line-height: 1;">$79</span><span style="font-size: 15px; color: rgba(0,35,52,0.45); margin-left: 4px;">/month</span></div>
+          </div>
+          <button style="height: 48px; width: 100%; margin-top: 20px; border-radius: 8px; border: 1.5px solid rgba(0,35,52,0.25); background: transparent; color: #002334; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;">Start 3-Day Free Trial</button>
+          <div style="height: 1px; background: rgba(0,35,52,0.06); margin: 24px 0;"></div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Up to 3 custom strategies</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Up to 2 connected accounts</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Up to 10 indicators</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Core backtesting access</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Performance analysis dashboard</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Discord community</span></div>
+          </div>
+        </div>
+
+        <!-- COMMAND (featured) -->
+        <div data-reveal data-reveal-delay="80" class="tv-featured-card" style="position: relative; margin-top: -24px;">
+          <div style="display: flex; justify-content: center; margin-bottom: 12px;"><span style="background: #CEFF00; color: #002334; font-size: 11px; font-weight: 700; padding: 6px 16px; border-radius: 999px;">Most Popular</span></div>
+          <div style="position: relative; background: #002334; border-left: 3px solid #CEFF00; border-radius: 16px; padding: 32px; box-shadow: 0 24px 48px rgba(0,35,52,0.25);">
+            <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #CEFF00; text-transform: uppercase;">Tier 2</div>
+            <div style="font-size: 28px; font-weight: 700; color: #FFFFFF; margin-top: 8px;">Command</div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.58); line-height: 1.6; margin-top: 8px;">Unlock the full working system with AI-connected analysis, deeper backtesting, and entry-level copy trading.</div>
+            <div style="margin-top: 24px;">
+              <div style="font-size: 11px; color: rgba(255,255,255,0.40); margin-bottom: 4px;">Starting at</div>
+              <div><span style="font-family: 'Unna', Georgia, serif; font-weight: 700; font-size: 56px; color: #CEFF00; line-height: 1;">$119</span><span style="font-size: 15px; color: rgba(255,255,255,0.45); margin-left: 4px;">/month</span></div>
+            </div>
+            <button style="height: 48px; width: 100%; margin-top: 20px; border-radius: 8px; border: none; background: #CEFF00; color: #002334; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;">Subscribe Now</button>
+            <div style="height: 1px; background: rgba(255,255,255,0.08); margin: 24px 0;"></div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Up to 10 strategies</span></div>
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Up to 20 indicators</span></div>
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Connect your own AI models</span></div>
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Token-based unlimited backtesting</span></div>
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Copy trading: 1 master + 2 slave accounts</span></div>
+              <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(255,255,255,0.70);">Live trading workflow support</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APEX -->
+        <div data-reveal data-reveal-delay="160" style="background: #FFFFFF; border: 1px solid rgba(0,35,52,0.08); border-radius: 16px; padding: 32px;">
+          <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #6F26FF; text-transform: uppercase;">Tier 3</div>
+          <div style="font-size: 28px; font-weight: 700; color: #002334; margin-top: 8px;">Apex</div>
+          <div style="font-size: 14px; color: rgba(0,35,52,0.55); line-height: 1.6; margin-top: 8px;">Expand strategy control, unlock the full indicator suite, and scale structured copy trading across more accounts.</div>
+          <div style="margin-top: 24px;">
+            <div style="font-size: 11px; color: rgba(0,35,52,0.40); margin-bottom: 4px;">Starting at</div>
+            <div><span style="font-family: 'Unna', Georgia, serif; font-weight: 700; font-size: 56px; color: #002334; line-height: 1;">$189</span><span style="font-size: 15px; color: rgba(0,35,52,0.45); margin-left: 4px;">/month</span></div>
+          </div>
+          <button style="height: 48px; width: 100%; margin-top: 20px; border-radius: 8px; border: 1.5px solid rgba(0,35,52,0.25); background: transparent; color: #002334; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;">Subscribe Now</button>
+          <div style="height: 1px; background: rgba(0,35,52,0.06); margin: 24px 0;"></div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Unlimited strategies</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Unlimited indicators</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Connect your own AI models</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Token-based unlimited backtesting</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Copy trading: 2 master + 6 slave accounts</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="font-size: 13px; color: rgba(0,35,52,0.65);">Priority workflow support</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━ S5 — FINAL CTA (navy) ━━━ -->
+  <section id="cta" style="position: relative; background: #002334; border-top: 1px solid rgba(0,35,52,0.08); padding: clamp(72px, 11vw, 112px) 0; text-align: center; overflow: hidden;">
+    <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px);">
+      <h2 data-reveal style="font-family: 'Unna', Georgia, serif; font-weight: 700; font-size: clamp(38px, 4.8vw, 52px); line-height: 1.1; color: #FFFFFF; max-width: 640px; margin: 0 auto;">Try the platform free for 3 days.</h2>
+      <p data-reveal data-reveal-delay="80" style="font-size: 17px; color: rgba(255,255,255,0.52); max-width: 480px; margin: 20px auto 0; line-height: 1.7;">Explore the full workflow before choosing a plan.</p>
+      <div data-reveal data-reveal-delay="160" style="display: flex; justify-content: center; margin-top: 40px;">
+        <button style="height: 56px; padding: 0 40px; border-radius: 8px; border: none; background: #CEFF00; color: #002334; font-family: inherit; font-size: 16px; font-weight: 700; cursor: pointer;">Start 3-Day Free Trial</button>
+      </div>
+      <div style="font-size: 12px; color: rgba(255,255,255,0.28); margin-top: 16px;">No credit card required · Cancel anytime</div>
+    </div>
+  </section>
+
+  <!-- ━━━ FOOTER ━━━ -->
+  <footer style="background: #001829; border-top: 1px solid rgba(255,255,255,0.06); padding: 64px 0 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px);">
+      <div class="tv-footer-grid" style="display: grid; grid-template-columns: 30fr 18fr 18fr 18fr; gap: 48px;">
+        <div>
+          <img src="assets/tv-darkmode.svg" alt="TraderVault LM" style="height: 28px; width: auto; display: block;">
+          <div style="font-size: 14px; color: rgba(255,255,255,0.38); margin-top: 12px;">One system for smarter trading.</div>
+        </div>
+        <div>
+          <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.30); margin-bottom: 16px;">PLATFORM</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="about.html" style="font-size: 14px; color: rgba(255,255,255,0.52);">About Us</a>
+            <a href="index.html#features" style="font-size: 14px; color: rgba(255,255,255,0.52);">Features</a>
+            <a href="integrations.html" style="font-size: 14px; color: rgba(255,255,255,0.52);">Integrations</a>
+            <a href="#top" style="font-size: 14px; color: rgba(255,255,255,0.52);">Pricing</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.30); margin-bottom: 16px;">SUPPORT</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="#cta" style="font-size: 14px; color: rgba(255,255,255,0.52);">Contact</a>
+            <a href="index.html#faq" style="font-size: 14px; color: rgba(255,255,255,0.52);">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: rgba(255,255,255,0.30); margin-bottom: 16px;">LEGAL</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="#" style="font-size: 14px; color: rgba(255,255,255,0.52);">Privacy Policy</a>
+            <a href="#" style="font-size: 14px; color: rgba(255,255,255,0.52);">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <span style="font-size: 12px; color: rgba(255,255,255,0.28);">©2026 All Rights Reserved. @TradingVaultLM.</span>
+        <span style="font-size: 11px; color: rgba(255,255,255,0.20);">Powered by TraderVault LM · v1.0</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
