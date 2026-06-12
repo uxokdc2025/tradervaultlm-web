@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 36" fill="none">
-  <!-- Purple icon with lime diamond -->
-  <rect width="36" height="36" rx="8" fill="#6F26FF"/>
-  <rect x="10" y="10" width="16" height="16" rx="2" transform="rotate(45 18 18)" fill="#CEFF00"/>
-  <!-- TraderVault wordmark -->
-  <text x="48" y="25" font-family="'Plus Jakarta Sans', Arial Black, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF">TraderVault</text>
-  <!-- LM in purple -->
-  <text x="168" y="25" font-family="'Plus Jakarta Sans', Arial Black, sans-serif" font-weight="800" font-size="17" fill="#6F26FF">LM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 34" fill="none">
+  <rect x="0" y="7" width="20" height="20" rx="4" fill="#6F26FF"/>
+  <path d="M5 17 L10 12 L15 17 L10 22 Z" fill="#CEFF00"/>
+  <text x="28" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">TraderVault</text>
+  <text x="148" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="16" fill="#6F26FF">LM</text>
 </svg>
