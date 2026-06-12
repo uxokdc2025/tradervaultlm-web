@@ -27,6 +27,10 @@
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; transition: none !important; }
     }
+    [data-reveal]{opacity:0;transform:translateY(40px);transition:opacity 500ms cubic-bezier(.4,0,.2,1),transform 500ms cubic-bezier(.4,0,.2,1)}
+    [data-reveal].revealed{opacity:1;transform:translateY(0)}
+    @media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+    .int-tile:hover{background:rgba(206,255,0,0.06)!important;border-color:rgba(206,255,0,0.30)!important;}
   </style>
 </head>
 <body>
@@ -66,6 +70,31 @@
     </div>
   </section>
 
+  <!-- S1b — INTEGRATION GRID -->
+  <section style="position:relative;background:#001829;border-top:1px solid rgba(255,255,255,0.06);padding:clamp(56px,9vw,96px) 0;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;"></div>
+    <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);">
+      <div data-reveal style="text-align:center;margin-bottom:52px;">
+        <h2 style="font-family:'Unna',Georgia,serif;font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.1;color:#FFFFFF;margin:0;">12 connected platforms. One unified system.</h2>
+        <p style="font-size:15px;color:rgba(255,255,255,0.45);margin:16px auto 0;max-width:520px;line-height:1.7;">From charting to prop firms to live execution — every integration is part of the same connected workflow.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:900px;margin:0 auto;" data-reveal>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Charting</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">TradingView</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Charting</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">NinjaTrader</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Prop Firm</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">FTMO</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Prop Firm</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">FundedNext</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Prop Firm</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">The5ers</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Prop Firm</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">TopStep</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#F59E0B;"></span><span style="font-size:11px;font-weight:600;color:#F59E0B;">Coming Soon</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Broker</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">Alpaca</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Broker</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">OANDA</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Broker</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">IBKR</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Platform</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">cTrader</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Platform</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">DXtrade</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+        <div class="int-tile" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 18px;transition:all 200ms;cursor:default;"><div style="font-size:11px;font-weight:600;color:rgba(206,255,0,0.7);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Platform</div><div style="font-size:16px;font-weight:700;color:#FFFFFF;">Match-Trader</div><div style="display:flex;align-items:center;gap:4px;margin-top:10px;"><span style="width:5px;height:5px;border-radius:50%;background:#16A34A;"></span><span style="font-size:11px;font-weight:600;color:#16A34A;">Connected</span></div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- S2 — CHARTING & SIGNALS -->
   <section style="background: #F8F6F0; border-top: 1px solid rgba(255,255,255,0.06); padding: clamp(56px, 9vw, 96px) 0;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px);">
@@ -75,6 +104,47 @@
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 820px; margin: 52px auto 0;">
         <div data-reveal style="background: #FFFFFF; border-radius: 16px; padding: 32px; border: 1px solid rgba(0,35,52,0.08);"><h3 style="font-size: 18px; font-weight: 700; color: #002334; margin: 0;">TradingView</h3><p style="font-size: 14px; color: rgba(0,35,52,0.55); line-height: 1.6; margin: 10px 0 0;">Chart-to-strategy signal connectivity and backtesting integration.</p><div style="display: inline-flex; align-items: center; gap: 5px; background: rgba(22,163,74,0.10); border-radius: 999px; padding: 4px 10px; margin-top: 16px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #16A34A;"></span><span style="font-size: 11px; font-weight: 600; color: #16A34A;">Connected</span></div></div>
         <div data-reveal data-reveal-delay="80" style="background: #FFFFFF; border-radius: 16px; padding: 32px; border: 1px solid rgba(0,35,52,0.08);"><h3 style="font-size: 18px; font-weight: 700; color: #002334; margin: 0;">NinjaTrader</h3><p style="font-size: 14px; color: rgba(0,35,52,0.55); line-height: 1.6; margin: 10px 0 0;">Advanced charting, futures data, and execution-ready strategy connectivity.</p><div style="display: inline-flex; align-items: center; gap: 5px; background: rgba(22,163,74,0.10); border-radius: 999px; padding: 4px 10px; margin-top: 16px;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #16A34A;"></span><span style="font-size: 11px; font-weight: 600; color: #16A34A;">Connected</span></div></div>
+      </div>
+      <div data-reveal data-reveal-delay="200" style="max-width:820px;margin:40px auto 0;">
+        <div style="border-radius:12px;overflow:hidden;box-shadow:0 24px 48px rgba(0,35,52,0.15);border:1px solid rgba(0,35,52,0.08);">
+          <div style="height:34px;background:#EEF1F3;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid rgba(0,35,52,0.06);">
+            <span style="width:10px;height:10px;border-radius:50%;background:#FF5F57;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#FEBC2E;"></span>
+            <span style="width:10px;height:10px;border-radius:50%;background:#28C840;"></span>
+            <div style="flex:1;display:flex;justify-content:center;"><div style="background:#FFFFFF;border-radius:6px;font-size:10px;color:rgba(0,35,52,0.45);padding:3px 14px;">app.tradervaultlm.com/signals/EURUSD</div></div>
+          </div>
+          <div style="background:#FFFFFF;padding:16px 20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="font-size:14px;font-weight:700;color:#002334;">EUR/USD</div>
+                <div style="font-size:13px;font-weight:600;color:#16A34A;">1.08432 <span style="font-size:11px;">▲ +0.0014</span></div>
+              </div>
+              <div style="display:flex;gap:6px;">
+                <span style="font-size:10px;font-weight:700;color:#FFFFFF;background:#6F26FF;border-radius:4px;padding:3px 8px;">1H</span>
+                <span style="font-size:10px;color:rgba(0,35,52,0.5);border:1px solid rgba(0,35,52,0.12);border-radius:4px;padding:3px 8px;">4H</span>
+                <span style="font-size:10px;color:rgba(0,35,52,0.5);border:1px solid rgba(0,35,52,0.12);border-radius:4px;padding:3px 8px;">1D</span>
+              </div>
+            </div>
+            <svg width="100%" height="160" viewBox="0 0 780 160" preserveAspectRatio="none" style="display:block;">
+              <line x1="0" y1="40" x2="780" y2="40" stroke="rgba(0,35,52,0.04)" stroke-width="1"/>
+              <line x1="0" y1="80" x2="780" y2="80" stroke="rgba(0,35,52,0.04)" stroke-width="1"/>
+              <line x1="0" y1="120" x2="780" y2="120" stroke="rgba(0,35,52,0.04)" stroke-width="1"/>
+              <defs><linearGradient id="euFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(111,38,255,0.12)"/><stop offset="100%" stop-color="rgba(111,38,255,0)"/></linearGradient></defs>
+              <path d="M0,128 L52,122 L104,114 L156,118 L208,104 L260,92 L312,98 L364,80 L416,72 L468,84 L520,62 L572,48 L624,56 L676,38 L728,30 L780,24 L780,160 L0,160 Z" fill="url(#euFill)"/>
+              <path d="M0,128 L52,122 L104,114 L156,118 L208,104 L260,92 L312,98 L364,80 L416,72 L468,84 L520,62 L572,48 L624,56 L676,38 L728,30 L780,24" fill="none" stroke="#6F26FF" stroke-width="1.5"/>
+              <polygon points="208,96 200,110 216,110" fill="#16A34A" opacity="0.9"/>
+              <polygon points="416,64 408,78 424,78" fill="#16A34A" opacity="0.9"/>
+              <polygon points="624,48 616,62 632,62" fill="#16A34A" opacity="0.9"/>
+              <polygon points="312,106 304,92 320,92" fill="#DC2626" opacity="0.9"/>
+              <polygon points="520,70 512,56 528,56" fill="#DC2626" opacity="0.9"/>
+            </svg>
+            <div style="display:flex;align-items:center;gap:16px;margin-top:8px;">
+              <span style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,35,52,0.6);"><span style="width:8px;height:8px;border-radius:1px;background:#16A34A;"></span>Buy signal</span>
+              <span style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(0,35,52,0.6);"><span style="width:8px;height:8px;border-radius:1px;background:#DC2626;"></span>Sell signal</span>
+              <span style="margin-left:auto;font-size:10px;color:rgba(0,35,52,0.4);">Strategy: EMA Crossover · Risk: 1.5% per trade</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -102,6 +172,47 @@
         <div data-reveal style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 32px;"><h3 style="font-size: 18px; font-weight: 700; color: #FFFFFF; margin: 0;">FTMO</h3><p style="font-size: 14px; color: rgba(255,255,255,0.58); line-height: 1.6; margin: 10px 0 0;">Daily loss limits, drawdown controls, and session filtering aligned to FTMO challenge rules.</p></div>
         <div data-reveal data-reveal-delay="80" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 32px;"><h3 style="font-size: 18px; font-weight: 700; color: #FFFFFF; margin: 0;">Match-Trader &amp; DXtrade</h3><p style="font-size: 14px; color: rgba(255,255,255,0.58); line-height: 1.6; margin: 10px 0 0;">Prop firm platform integrations with kill switch and cooldown period support.</p></div>
         <div data-reveal data-reveal-delay="160" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 32px;"><h3 style="font-size: 18px; font-weight: 700; color: #FFFFFF; margin: 0;">FundedNext &amp; More</h3><p style="font-size: 14px; color: rgba(255,255,255,0.58); line-height: 1.6; margin: 10px 0 0;">Growing list of supported funded-account environments with structured execution controls.</p></div>
+      </div>
+      <div data-reveal data-reveal-delay="200" style="max-width:700px;margin:40px auto 0;">
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:28px 32px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+            <div>
+              <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.08em;">Account Dashboard</div>
+              <div style="font-size:16px;font-weight:700;color:#FFFFFF;margin-top:4px;">FTMO Challenge · $100,000</div>
+            </div>
+            <span style="font-size:11px;font-weight:700;color:#16A34A;background:rgba(22,163,74,0.15);border-radius:999px;padding:5px 12px;">Active</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);">Phase Progress</span>
+                <span style="font-size:12px;font-weight:700;color:#CEFF00;">+$8,420 / $10,000</span>
+              </div>
+              <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:999px;overflow:hidden;"><div class="prog-bar" data-bar-target="84" style="height:100%;width:0%;background:linear-gradient(90deg,#CEFF00,rgba(206,255,0,0.7));border-radius:999px;transition:width 1s cubic-bezier(.4,0,.2,1);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);">Daily P&amp;L Limit</span>
+                <span style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.65);">$680 used / $1,000 max</span>
+              </div>
+              <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:999px;overflow:hidden;"><div class="prog-bar" data-bar-target="68" style="height:100%;width:0%;background:linear-gradient(90deg,#6F26FF,rgba(111,38,255,0.7));border-radius:999px;transition:width 1s cubic-bezier(.4,0,.2,1);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);">Max Drawdown Used</span>
+                <span style="font-size:12px;font-weight:700;color:#16A34A;">$2,300 / $10,000</span>
+              </div>
+              <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:999px;overflow:hidden;"><div class="prog-bar" data-bar-target="23" style="height:100%;width:0%;background:linear-gradient(90deg,#16A34A,rgba(22,163,74,0.7));border-radius:999px;transition:width 1s cubic-bezier(.4,0,.2,1);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);">Consistency Score</span>
+                <span style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.65);">91%</span>
+              </div>
+              <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:999px;overflow:hidden;"><div class="prog-bar" data-bar-target="91" style="height:100%;width:0%;background:linear-gradient(90deg,#2563EB,rgba(37,99,235,0.7));border-radius:999px;transition:width 1s cubic-bezier(.4,0,.2,1);"></div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -133,5 +244,35 @@
   </footer>
 
 </div>
+<script>
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const revEls = Array.from(document.querySelectorAll('[data-reveal]'));
+  if (!reduce && 'IntersectionObserver' in window) {
+    revEls.forEach(el => {
+      const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+      el.style.transitionDelay = d + 'ms';
+    });
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
+    }), { threshold: 0.15 });
+    revEls.forEach(el => io.observe(el));
+    // Progress bars
+    const barContainers = Array.from(document.querySelectorAll('[data-reveal]')).filter(el => el.querySelector('.prog-bar'));
+    const barIo = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.prog-bar').forEach((b, i) => {
+          setTimeout(() => { b.style.width = b.getAttribute('data-bar-target') + '%'; }, i * 150);
+        });
+        barIo.unobserve(e.target);
+      }
+    }), { threshold: 0.4 });
+    barContainers.forEach(el => barIo.observe(el));
+  } else {
+    revEls.forEach(el => el.classList.add('revealed'));
+    document.querySelectorAll('.prog-bar').forEach(b => { b.style.width = b.getAttribute('data-bar-target') + '%'; });
+  }
+})();
+</script>
 </body>
 </html>
