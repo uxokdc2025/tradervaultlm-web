@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 34" fill="none">
+  <rect x="0" y="7" width="20" height="20" rx="4" fill="#6F26FF"/>
+  <path d="M5 17 L10 12 L15 17 L10 22 Z" fill="#CEFF00"/>
+  <text x="28" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">TraderVault</text>
+  <text x="148" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="16" fill="#6F26FF">LM</text>
+</svg>

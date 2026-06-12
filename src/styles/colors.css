@@ -1,0 +1,117 @@
+/* Seamless AI — Color Tokens
+ * Palette: Signal Orange / Deep Black / Canvas White
+ * Rule: 90% restraint · 10% signal
+ * Never pure #000 or #FFF — always from this palette
+ * Never drop shadows — borders at 0.5px always
+ */
+
+:root {
+  /* ── Brand primaries ── */
+  --signal-orange:  #F54900;
+  --deep-black:     #0D0D0D;
+  --canvas-white:   #F2F1EE;
+  --mid-gray:       #8A8A85;
+  --border-gray:    #D8D6D0;
+
+  /* ── Accent palette ── */
+  --warm-amber:        #F5A623;
+  --warm-amber-dark:   #C4841C;
+  --vivid-teal:        #15A898;
+  --vivid-teal-dark:   #0C7269;
+  --cobalt-blue:       #2B7BB5;
+  --cobalt-blue-dark:  #1C5987;
+  --forest-green:      #2D9973;
+  --forest-green-dark: #1F6E52;
+
+  /* ── Light mode semantic tokens ── */
+  --bg:           var(--canvas-white);    /* #F2F1EE */
+  --fg:           var(--deep-black);      /* #0D0D0D */
+
+  /* Primary = Signal Orange */
+  --primary:      var(--signal-orange);
+  --primary-fg:   #ffffff;
+
+  /* Secondary = warm off-white tint */
+  --secondary:    oklch(0.93 0.004 80);
+  --secondary-fg: var(--deep-black);
+
+  /* Accent = same as primary */
+  --accent:       var(--signal-orange);
+  --accent-fg:    #ffffff;
+
+  /* Muted — warm light gray */
+  --muted:        oklch(0.942 0.005 80);
+  --muted-fg:     oklch(0.52 0.008 80);
+
+  /* Overlay — card/popover surface */
+  --overlay:      #ffffff;
+  --overlay-fg:   var(--deep-black);
+
+  /* Status — use accent palette */
+  --success:        var(--forest-green);
+  --success-fg:     #ffffff;
+  --warning:        var(--warm-amber);
+  --warning-fg:     var(--deep-black);
+  --danger:         oklch(0.577 0.245 27.325);
+  --danger-fg:      #ffffff;
+  --info:           var(--cobalt-blue);
+  --info-fg:        #ffffff;
+
+  /* Borders & inputs — always 0.5px, never drop shadow */
+  --border:       var(--border-gray);      /* #D8D6D0 */
+  --input:        var(--border-gray);
+  --ring:         var(--signal-orange);
+
+  /* Navigation surfaces */
+  --navbar:       var(--canvas-white);
+  --navbar-fg:    var(--deep-black);
+  --sidebar:      var(--canvas-white);
+  --sidebar-fg:   var(--deep-black);
+
+  /* Chart palette — brand accents */
+  --chart-1:  var(--signal-orange);
+  --chart-2:  var(--warm-amber);
+  --chart-3:  var(--vivid-teal);
+  --chart-4:  var(--cobalt-blue);
+  --chart-5:  var(--forest-green);
+}
+
+/* ── Dark mode (Deep Black hero) ── */
+.dark {
+  --bg:           var(--deep-black);
+  --fg:           var(--canvas-white);
+
+  --primary:      var(--signal-orange);
+  --primary-fg:   #ffffff;
+
+  --secondary:    oklch(0.18 0.004 80);
+  --secondary-fg: var(--canvas-white);
+
+  --accent:       var(--signal-orange);
+  --accent-fg:    #ffffff;
+
+  --muted:        oklch(0.16 0.004 80);
+  --muted-fg:     oklch(0.56 0.008 80);
+
+  --overlay:      oklch(0.13 0.004 80);
+  --overlay-fg:   var(--canvas-white);
+
+  --border:       oklch(0.22 0.005 80);
+  --input:        oklch(0.24 0.005 80);
+  --ring:         var(--signal-orange);
+
+  --navbar:       var(--deep-black);
+  --navbar-fg:    var(--canvas-white);
+  --sidebar:      oklch(0.11 0.004 80);
+  --sidebar-fg:   var(--canvas-white);
+}
+
+/* ── Tint utilities (for badge backgrounds, hover tints) ── */
+:root {
+  --signal-orange-10: color-mix(in srgb, var(--signal-orange) 10%, var(--canvas-white));
+  --signal-orange-20: color-mix(in srgb, var(--signal-orange) 20%, var(--canvas-white));
+  --warm-amber-20:    color-mix(in srgb, var(--warm-amber) 20%, transparent);
+  --vivid-teal-15:    color-mix(in srgb, var(--vivid-teal) 15%, transparent);
+  --cobalt-blue-15:   color-mix(in srgb, var(--cobalt-blue) 15%, transparent);
+  --forest-green-15:  color-mix(in srgb, var(--forest-green) 15%, transparent);
+}
